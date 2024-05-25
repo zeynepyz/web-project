@@ -7,6 +7,7 @@
     "img1 img2 img3"
     "alt1 alt2 alt3"
     "ft ft ft";
+    grid-gap: 10px;
 }
 
 
@@ -37,27 +38,30 @@
 
 #first{
     grid-area: img1;
-    background-position: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 55%;
     background-image: url('images/r3.jpg');
-    background-size: 110%;
+    background-size: 450px;
     background-repeat: no-repeat;
     margin: 10px;
 }
 
 #second{
     grid-area: img2;
-    background-position: 110%;
+    background-position: 50%;
     background-image: url("images/450sr.png");
-    background-size: contain;
+    background-size: 450px;
     background-repeat: no-repeat;
     margin: 10px;
 }
 
 #third{
     grid-area: img3;
-    background-position: 110%;
+    background-position: 30%;
     background-image: url("images/kawazaki.png");
-    background-size: contain;
+    background-size: 400px;
     background-repeat: no-repeat;
     margin: 10px;
 }
