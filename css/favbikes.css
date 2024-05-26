@@ -73,9 +73,6 @@
     border: 3px solid rgba(128, 128, 128, 0.459);
 }
 
-.bn{
-    grid-area: bn;
-}
 
 .bn{
     grid-area: bn;
@@ -87,11 +84,11 @@
 
 #next{
     display: inline;
-    border: 3px solid;
     padding: 4px;
-    border-radius: 6px;
     text-decoration: dashed;
     margin: 4px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.705);
 }
 
 
