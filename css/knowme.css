@@ -1,0 +1,77 @@
+@import "style.css" screen;
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "hd"
+    "hd2"
+    "avatar"
+    "blog" 
+    "sidebar"
+    "bn"
+    "ft";
+    grid-template-rows: auto ;
+    grid-template-columns: auto;
+}
+
+.header2{
+    text-align: center;
+    padding: 20px;
+    color: rgb(80, 19, 95);
+    grid-area: hd2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+img{
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid aqua;
+}
+
+.avatar{
+    grid-area: avatar;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid rgba(128, 128, 128, 0.384);
+}
+
+.blog{
+    grid-area: blog;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid rgba(128, 128, 128, 0.384);
+
+}
+
+@media(min-width:1000px){
+    .container{
+    display: grid;
+    grid-template-areas: 
+    "hd hd hd"
+    "hd2 hd2 hd2"
+    "avatar blog sidebar"
+    "bn bn bn"
+    "ft ft ft";
+    grid-template-rows: auto 290px auto;
+    grid-template-columns: 350px auto 230px;
+    }
+
+    img{
+        width: 60%;
+    }
+
+    
+}
