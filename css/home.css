@@ -1,17 +1,17 @@
+@import "style.css" screen;
+
 .container{
     display:grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px 550px;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* Initially each element has its own row for small screens */
+    grid-template-rows: 100px 400px;
     grid-template-areas: 
     "hd"
     "sd"
     "main"
     "ft";
-    grid-gap: 15px;
+    grid-gap: 70px;
   }
-  /* add css for nested grid here */
+
   .nestedGrid{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -25,19 +25,6 @@
     border-radius: 1%;
     padding: 10px;
   }
-  .nestedHeader{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "space home"
-    "space post";
-    grid-gap: 10px;
-    font-size: larger;
-    border: 3px solid rgba(128, 128, 128, 0.384);
-    padding: 1%;
-    border-radius: 5px;
-    justify-content: center;
-  }
 
   .nestedSidebar{
     display: grid;
@@ -49,17 +36,6 @@
     grid-gap: 10px;
     
   }
-
-  .controller{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-size: 25px;
-    text-decoration: none;
-    color: purple;
-    margin: 2px;
-  }
-
   #main{
     display: flex;
     align-items: center;
@@ -83,11 +59,6 @@
     padding: 5px;
   }
 
-    .header{
-      /* row start/column start/ row end/ column end */
-      grid-area:hd;
-    }
-
     .sidebar{
       grid-area: sd;
       margin: 20px;
@@ -97,23 +68,6 @@
     .content{
       grid-area: main;
       margin: 20px;
-    }
-
-    .footer{
-      grid-area: ft; 
-      border: 1px solid salmon; 
-      border-radius: 3px;
-      background-color: blueviolet; 
-      list-style-type: none;
-      text-align: center;
-      margin: 20px;
-      padding: 0;
-      font-size: 60px;
-    }
-    .footer li {
-      display: inline-block;
-      font-size: 20px;
-      padding: 20px;
     }
 
 .card {

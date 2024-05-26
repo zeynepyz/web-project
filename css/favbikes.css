@@ -1,6 +1,8 @@
+@import "style.css" screen;
+
 .container{
     display: grid;
-    grid-template-rows: 100px 300px 200px 300px 200px 300px 200px 100px;
+    grid-template-rows: 100px 300px auto 300px auto 300px auto 100px 150px;
     grid-template-areas: 
     "hd"
     "img1"
@@ -9,35 +11,10 @@
     "alt2"
     "img3"
     "alt3"
+    "bn"
     "ft";
     grid-gap: 10px;
 }
-
-
-.nestedHeader{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 10px;
-    font-size: larger;
-    border: 3px solid rgba(128, 128, 128, 0.384);
-    padding: 1%;
-    border-radius: 5px;
-    justify-content: center;
-  }
-
-.controller{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-size: 25px;
-    text-decoration: none;
-    color: purple;
-    margin: 2px;
-  }
-
-.header{
-    grid-area:hd;
-  }
 
 #first{
     grid-area: img1;
@@ -96,12 +73,12 @@
     border: 3px solid rgba(128, 128, 128, 0.459);
 }
 
-.footer{
-    grid-area: ft;
+.bn{
+    grid-area: bn;
 }
 
-.footer{
-    grid-area: ft;
+.bn{
+    grid-area: bn;
     text-align: center;
     font-size: 30px;
     margin: 50px;
@@ -128,6 +105,7 @@
         "hd hd hd"
         "img1 img2 img3"
         "alt1 alt2 alt3"
+        "bn bn bn"
         "ft ft ft";
         grid-gap: 10px;
       }

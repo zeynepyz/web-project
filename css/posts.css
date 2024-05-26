@@ -1,3 +1,5 @@
+@import "style.css" screen;
+
 .container{
     display:grid;
     grid-template-columns: auto;
@@ -10,20 +12,6 @@
     "ft";
     grid-gap: 15px;
   }
-
-.nestedHeader{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    "space home"
-    "space post";
-    grid-gap: 10px;
-    font-size: larger;
-    border: 3px solid rgba(128, 128, 128, 0.384);
-    padding: 1%;
-    border-radius: 5px;
-    justify-content: center;
-}
 
 .blockContent{
     display: grid;
@@ -40,20 +28,6 @@
 
 }
 
-.header{
-    /* row start/column start/ row end/ column end */
-    grid-area:hd;
-}
-
-.controller{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-size: 25px;
-    text-decoration: none;
-    color: purple;
-    margin: 2px;
-  }
 
 #main{
     display: flex;
@@ -96,7 +70,6 @@
     .container{
           display:grid;
           grid-template-columns: auto;
-          border: 1px solid;
           grid-template-rows: 100px auto 150px;
           grid-template-areas: 
           "hd"
