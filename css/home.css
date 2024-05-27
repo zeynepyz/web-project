@@ -1,15 +1,17 @@
 @import "style.css" screen;
+@import "footer.css" screen;
+@import "card.css" screen;
 
 .container{
     display:grid;
     grid-template-columns: auto;
-    grid-template-rows: 100px 400px;
+    grid-template-rows: 100px 350px 600px auto;
     grid-template-areas: 
     "hd"
     "sd"
     "main"
     "ft";
-    grid-gap: 70px;
+    grid-gap: 50px;
   }
 
   .nestedGrid{
@@ -27,15 +29,10 @@
   }
 
   .nestedSidebar{
-    display: grid;
-    grid-template-rows: 130px auto 30px;
-    grid-template-areas: 
-    "b"
-    "con"
-    "fot";
-    grid-gap: 10px;
-    
+    display: inline-block;
+    text-align: center;
   }
+
   #main{
     display: flex;
     align-items: center;
@@ -45,7 +42,6 @@
     width: 320px;
     height: 70px;
     margin: auto;
-    grid-area: b;
     justify-content: center;
   }
   
@@ -70,23 +66,7 @@
       margin: 20px;
     }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-}
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.carddown {
-  padding: 2px 16px;
-}
-
-img {
-  object-fit: cover;
-}
 
 
   /* If Screen Is Wide Enough */

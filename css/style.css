@@ -58,38 +58,6 @@ form.example::after {
   display: table;
 }
 
-.footer{
-  grid-area: ft; 
-  border: 1px solid purple; 
-  border-radius: 3px;
-  background-color: rgb(191, 152, 228); 
-  list-style-type: none;
-  text-align: center;
-  margin: 20px;
-  padding: 0;
-  font-size: 60px;
-}
-.footer li {
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px;
-}
-
-.bn{
-  grid-area: bn;
-  text-align: center;
-  font-size: 30px;
-  margin: 50px;
-}
-
-#backnext{
-  display: inline;
-  padding: 4px;
-  text-decoration: dashed;
-  margin: 4px;
-  font-size: 30px;
-  color: rgba(0, 0, 0, 0.705);
-}
 
 
 @media(min-width:900px) {

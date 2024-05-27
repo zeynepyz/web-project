@@ -1,4 +1,5 @@
 @import "style.css" screen;
+@import "footer.css" screen;
 
 .container{
     display: grid;
