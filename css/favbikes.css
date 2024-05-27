@@ -75,14 +75,6 @@
 }
 
 
-.bn{
-    grid-area: bn;
-    text-align: center;
-    font-size: 30px;
-    margin: 50px;
-}
-
-
 #next{
     display: inline;
     padding: 4px;

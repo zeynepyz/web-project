@@ -58,8 +58,6 @@ form.example::after {
   display: table;
 }
 
-
-
 @media(min-width:900px) {
   .nestedHeader{
 
